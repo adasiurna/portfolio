@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <header class="container juodas">
+    <div class="row">
+      <div><a id="main_logo" href="#home">ADA ŠIURNA</a></div>
+      <nav id="main_nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-pic"></div>
+    </div>
+  </header>
+
+  <div id="home" class="container bg-black">
+    <div class="row">
+      <h2>Hello! I'm</h2>
+      <h1>Ada Šiurna</h1>
+      <p class="hero-list">Front-End development | JavaScript</p>
+      <form class="hero-button" type="button"><a href="#contact"></a>Let's talk</a></form>
+    </div>
+  </div>
+
+  <div id="about" class="container">
+    <div class="row about-padding">
+      <div class="about-picture">
+        <img src="img/ape.jpg" title="this is me">
+      </div>
+      <div class="about-right">
+        <h1 class="about-h1">ABOUT <span>ME</span></h1>
+        <div class="about-hor-bar"></div>
+        <h3 class="about-h3">Hello! i'm Ada</h3>
+        <p class="about-p">
+          ❋ I write code, I read code, I fix code with a passion of a new beginner.<br>
+          ❋ I enjoy working in an team as much as I appreciate time I can work by myself.<br>
+          ❋ I love active leisure time, I love my family, I love TRX trainings and trampoline jumping, I love people, I
+          love life (:<br>
+          ❋ Lot's of 'I' sentences here, still I believe that it is all about 'we' in our
+          lifes!
+        </p>
+        <div class="about-icons">
+          <a href="https://github.com/adasiurna?tab=repositories" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ada-siurna-57095616a" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.freecodecamp.org/adasiurna" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+          <a href="https://www.facebook.com/ada.siurna/" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div>
+          <form class="about-button" type="button"><a href="#contact">CONTACT ME</a></form>
+          <form class="about-button" type="button" onclick="window.open('https://s.tofo.lt/f/174ffbf82a8248d59ff0/')">
+            DOWNLOAD CV</form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="available" class="container bg-red">
+    <h1>I AM AVAILABLE FOR NEW CONTRACT</h1>
+    <form class="available-btn" type="button"><a href="#contact">HIRE ME NOW</a></form>
+  </div>
+
+  <div id="resume" class="container">
+    <div class="row">
+      <h1 class="title"><span>MY</span> RESUME</h1>
+      <form class="about-hor-bar"></form>
+      <div id="resume_work">
+        <h1><span>
+            Work
+          </span></h1>
+        <div id="resume_work_box">
+        </div>
+      </div>
+      <div id="resume_education">
+        <h1><span>
+            EDUCATION
+          </span></h1>
+        <div id="resume_education_box">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-grey">
+    <div class="row">
+      <div class="testimonials">
+
+        <div class="testimonial" id="testim0">
+          <img src="img/vienas.png">
+          <p>Nunc accumsan quam metus, id posuere massa condimentum aliquet. Pellentesque scelerisque massa ut quam
+            pretium ultricies eu in lacus. Suspendisse elementum magna a sem placerat, ut facilisis purus tempor. Nunc
+            ac convallis dui.</p>
+          <h3>-MS. Mandy Doe</h3>
+          <h4>Founder of Happines</h4>
+        </div>
+
+        <div class="testimonial" id="testim1">
+          <img src="img/du.png">
+          <p>Nullam consequat urna risus, quis malesuada purus rhoncus in. Nulla hendrerit nunc a venenatis finibus. Sed
+            dignissim, eros non commodo pellentesque, ante magna consectetur leo, nec volutpat elit neque nec lacus.</p>
+          <h3>-MS. Lorem Doe</h3>
+          <h4>Founder of the World</h4>
+        </div>
+
+        <div class="testimonial" id="testim2">
+          <img src="img/trys.jpg">
+          <p>Donec a augue ornare, elementum nisi at, scelerisque est. Etiam ex ipsum, venenatis at consequat in,
+            egestas sit amet elit. Fusce sit amet massa luctus, consequat nibh non, varius ligula. Suspendisse vulputate
+            facilisis mauris, eget pretium urna bibendum in.</p>
+          <h3>-MS. Mandy Impsum</h3>
+          <h4>Founder of the Sun</h4>
+        </div>
+      </div>
+
+      <div class="prev-next">
+        <div onclick="plusDivs(-1)" class="prev">
+          &#x2039
+        </div>
+        <div onclick="plusDivs(+1)" class="next">
+          &#x203a
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div id="dot0"></div>
+        <div id="dot1"></div>
+        <div id="dot2"></div>
+      </nav>
+
+    </div>
+  </div>
+
+  <div id="portfolio" class="container">
+    <div class="row">
+      <h1 class="title"><span>MY</span> PORTFOLIO</h1>
+      <form class="about-hor-bar"></form>
+      <div id="portfolio_gallery"></div>
+    </div>
+  </div>
+
+  <div id="contact" class="bg-grey">
+    <h1 class="title">CONTACT <span>ME</span></h1>
+    <form class="about-hor-bar"></form>
+    <div class="contact-container">
+
+      <div class="contact-form-left">
+        <form class="guest-contacts">
+          <input placeholder="Name" />
+          <input placeholder="Email" />
+          <input placeholder="Phone" />
+          <input placeholder="Website" />
+          <textarea placeholder="Your message"></textarea>
+        </form>
+        <form class="hero-button" type="button">
+          Send message
+        </form>
+      </div>
+
+      <div class="contact-form-right">
+        <i class="fa fa-map-marker"></i>
+        <div class="contact-form-right-text">
+          <h3>Adress:</h3>
+          <p>Vilnius, Lithuania</p>
+        </div>
+      </div>
+
+      <div class="contact-form-right">
+        <i class="fa fa-envelope"></i>
+        <div class="contact-form-right-text">
+          <h3>Email:</h3>
+          <p><a href="ada.siurniene@gmail.com">ada.siurniene@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-form-right">
+        <i class="fa fa-linkedin"></i>
+        <div class="contact-form-right-text">
+          <h3>Linkedin:</h3>
+          <p><a target="_blank" href="https://www.linkedin.com/in/ada-siurna-57095616a">
+              www.linkedin.com/in/ada-siurna-57095616a</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="main_footer">
+    <h4>ADA ŠIURNA</h4>
+    <div class="footer-icons">
+      <a href="https://github.com/adasiurna?tab=repositories" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ada-siurna-57095616a" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.freecodecamp.org/adasiurna" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+      <a href="https://www.facebook.com/ada.siurna/" target="_blank"><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="sub-footer">
+    <p>CopyRight &#9400 By Martin Luther 2017-18 | All Rights Reserved.</p>
+  </div>
+
+  <div class="popup">
+    <i class="fa fa-remove"></i>
+    <h5>Ooops! Haven't coded yet,</h5>
+    <h5>but I know how!</h5>
+  </div>
+
+
+  <script src="js/data.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/actions.js"></script>
+  <!--pagal tai kas ka naudoja. data tikrai nieko nenaudos. tik data pati bus naudojama-->
+</body>
+
+</html>

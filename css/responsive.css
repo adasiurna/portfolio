@@ -1,0 +1,112 @@
+@media ( max-width: 1200px ) {
+	.container > .row {
+		width: 94%;
+        margin-left: 3%;
+    }
+}	
+
+@media ( max-width: 1050px){
+	.contact-form-left,
+	.contact-form-right	{
+		display: inline-block;
+		width: 45%;
+		float: left;
+	}
+	.contact-container {
+		margin: 5%;
+	}
+	
+	#contact input {
+		display: block;
+		width: 100%
+	}
+	.contact-form-left > form > input:nth-child(2n) {
+        margin-left: 0;
+		}
+}	
+
+
+@media ( max-width: 900px ){
+	#main_nav > a {
+			font-size: 12px;
+			line-height: 20px;
+			padding: 5px;
+		}
+		
+}
+
+
+@media ( max-width: 800px ) {
+	.container > .row {
+		width: 94%;
+        margin-left: 3%;
+    }
+		
+	.about-picture, 
+	.service-box, 
+	#resume_work,
+	#resume_education, 
+	.blog-box,
+	.contact-form-left,
+	.contact-form-right	{
+		display: block;
+		width: 100%;
+	}
+	.about-right {
+		margin: 20px;
+		display: block;
+		width: 94%;
+	}
+	
+	.about-picture,
+	.about-rightd	{
+		width: 94%;
+		margin-left: 3%;
+	}
+	.service-box,
+	.blog-box {
+		margin-bottom: 15px;
+	}
+	
+		#portfolio_content > .portfolio-item:nth-child(3n) {
+                margin-right: 20px;
+            }
+		#portfolio_content > .portfolio-item:nth-child(2n) {
+                margin-right: 0;
+            }	
+		#portfolio_content > .portfolio-item {
+			display: inline-block;
+			margin-right: 20px;
+            width: calc( (100% - 20px) / 2 );
+        }
+           #contact .contact-form-right {
+			   margin: 20px 20px 20px 0;
+		   }
+}	
+
+@media ( max-width: 650px ) {
+	#main_nav {
+		display: none;
+	}
+	.nav-pic {
+		display: inline-block;
+		width: 43px;
+		height: 33px;
+		float: right;
+		cursor: pointer;
+	}
+	#home > div > h2 {
+		font-size: 40px;
+	}
+	#home > div > h1, {
+		font-size: 60px;
+	}
+	.about-button:first-child {
+		margin-bottom: 10px;
+	}
+	#available >  h1 {
+		padding: 20px 0;
+	}
+	
+}	
+
