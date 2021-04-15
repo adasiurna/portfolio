@@ -67,7 +67,7 @@ var resume_items = [
     type: 'Education',
     place: 'Baltic Talents Academy',
     date: 'Aug 2018 - Feb 2019',
-    description: 'Web programming. Front-End development using HTML, CSS, JavaScript, React. Back-End development using PHP, Node.js, Express.js. Other technologies used: Git, MySQL, MongoDB, npm, Postman and more.'
+    description: 'HTML, CSS, JavaScript, jQuery, React.js, Node.js, Postman, MongoDB, PHP, Laravel, MySQL, Java, Git.'
   },
   {
     type: 'Education',
