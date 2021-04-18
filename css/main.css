@@ -7,6 +7,10 @@ body * {
     font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
 }
+button, button:active, button:focus, button:focus-within, button:target, button:visited, button:focus-visible  {
+  border:none;
+  outline:none;
+}
 body *::selection {
 	background-color: #F34236;
 	color: white;
@@ -93,12 +97,12 @@ header {
                 border-radius: 15px;
             }
 
-header.juodas {
+header.header-black {
     background-color: rgba(0,0,0,0);
 	box-shadow: none;
 }
-    header.juodas #main_logo,
-    header.juodas #main_nav > a {
+    header.header-black #main_logo,
+    header.header-black #main_nav > a {
         color: #FFF;		
     }
 
@@ -464,6 +468,7 @@ header.juodas {
                     margin-top: 20px;
                     color: #FFF;
 					font-size: 12px;
+          padding-bottom: 40px;
                 }
 				
 /**************************************

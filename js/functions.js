@@ -2,9 +2,9 @@
 function headerBackgroundoAdjust() {
   var header_riba = 50;
   if (header_riba < scrollY) {
-    $('header').removeClass('juodas');
+    $('header').removeClass('header-black');
   } else {
-    $('header').addClass('juodas');
+    $('header').addClass('header-black');
   }
   return;
 }
@@ -31,19 +31,6 @@ function menuActiveClass() {
   }
   return;
 }
-
-
-function renderServiceBlocks(data) {
-  var HTML = '';
-  for (var i = 0; i < 3; i++) {
-    HTML += '<div class="service-box">\
-                  <i class="fa fa-'+ data[i].ikona + '"></i>\
-                  <h4>'+ data[i].title + '</h4>\
-                  <p>'+ data[i].tekstas + '</p></div>';
-  }
-  $('#services > div > div').html(HTML);
-  return;
-};
 
 function renderResumeBlocks(data) {
   var HTMLwork = '';
@@ -72,6 +59,23 @@ function renderResumeBlocks(data) {
   }
   $('#resume_work_box').html(HTMLwork);
   $('#resume_education_box').html(HTMLeducation);
+  return;
+}
+
+function renderPortfolioPagesInfo(data) {
+  for (var i = 0; i < data.length; i++) {
+    var id = '#' + data[i].id;
+    if ($(id).length) {
+      console.log(id);
+      var shortDescription = data[i].shortDesc;
+      var longDescription = data[i].longDesc;
+      var year = data[i].year;
+      console.log(shortDescription);
+      $(id).find('.about-h3').html(shortDescription);
+      $(id).find('.about-p').html(longDescription);
+      $(id).find('.about-year').html(year);
+    }
+  }
   return;
 }
 
@@ -134,70 +138,3 @@ function renderOnePortfolioElement(data) {
               </div>';
   return HTML;
 };
-
-
-var slideIndex = 1;
-showDivs(slideIndex, n = 1);
-
-function plusDivs(n) {
-  var prevOrNext = n;
-  showDivs(slideIndex += n, prevOrNext);
-}
-
-function showDivs(n, prevOrNext) {
-  var x = document.getElementsByClassName("testimonial");
-  if (n > x.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = x.length };
-  if (prevOrNext === 1) {
-    //button forward
-    for (var i = 0; i < x.length; i++) {
-      $('.testimonials > div').removeClass('use-animation-back').removeClass('use-animation');
-      //$('.testimonials > div').;
-      $('.testimonials > div').css('left', '1200px').css('display', 'none');
-
-      $('.nav > div').removeClass('active');
-    }
-    $(x[slideIndex - 1]).css('display', 'block').addClass('use-animation-back');
-    $('#dot' + (slideIndex - 1)).addClass('active');
-  } else {
-    //button back
-    for (var i = 0; i < x.length; i++) {
-      $('.testimonials > div').removeClass('use-animation-back');
-      $('.testimonials > div').removeClass('use-animation');
-      $('.testimonials > div').css('left', '-1200px');
-      $('.nav > div').removeClass('active');
-    }
-    $(x[slideIndex - 1]).css('display', 'block').addClass('use-animation');
-    $('#dot' + (slideIndex - 1)).addClass('active');
-  }
-  return;
-}
-function slideOnDotClick(i) {
-  $('.testimonials > div').css('left', '-1300px');
-  $('.testimonials > div').css('display', 'block');
-  $('.testimonials > div').removeClass("use-animation");
-  $('.testimonials > div').removeClass("use-animation-back");
-  $('.nav > div').removeClass('active');
-  $('#testim' + i).addClass("use-animation");
-  $('#dot' + i).addClass('active');
-  return;
-};
-
-
-function renderMyBlogItems(data) {
-  var HTML = '';
-  knopke = '<form class="about-button" type="button" >READ MORE</form></div>';
-  for (var i = 0; i < data.length; i++) {
-    HTML += '<div class="blog-box">\
-      <div class="blog-img"><img src="img/'+ data[i].picture + '.jpg" title="blog pic"></div>\
-      <div class="blog-text">\
-        <h3>'+ data[i].title + '</h3>\
-        <h4>Posted On '+ data[i].date + '</h4>\
-        <p>'+ data[i].description + '</p>\
-      </div>' + knopke;
-  };
-  $('#blog-box-container').html(HTML);
-  return;
-};
-
-

@@ -5,6 +5,7 @@ $(document).ready(function () {
   headerBackgroundoAdjust();
   renderResumeBlocks(resume_items);
   renderPortfolioGallery(portfolio_gallery);
+  //renderPortfolioPagesInfo(portfolio_gallery);
   menuActiveClass();
 
 
@@ -35,13 +36,6 @@ $(document).ready(function () {
         }
       }
     }
-  });
-
-  // on dot click - animate testimonial from left
-  $('.nav > div').click(function () {
-    var i;
-    i = $(this).index();
-    slideOnDotClick(i);
   });
 
 

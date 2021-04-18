@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="container juodas">
+  <header class="container header-black">
     <div class="row">
       <div><a id="main_logo" href="#home">ADA ŠIURNA</a></div>
       <nav id="main_nav">
@@ -31,7 +31,7 @@
       <h2>Hello! I'm</h2>
       <h1>Ada Šiurna</h1>
       <p class="hero-list">Front-End development | JavaScript</p>
-      <form class="hero-button" type="button"><a href="#contact"></a>Let's talk</a></form>
+      <form class="hero-button" type="button"><a href="#contact">Let's talk</a></form>
     </div>
   </div>
 
@@ -72,7 +72,7 @@
     <form class="available-btn" type="button"><a href="#contact">HIRE ME NOW</a></form>
   </div>
 
-  <div id="resume" class="container">
+  <div id="resume" class="container bg-grey">
     <div class="row">
       <h1 class="title"><span>MY</span> RESUME</h1>
       <form class="about-hor-bar"></form>
@@ -93,55 +93,6 @@
     </div>
   </div>
 
-  <div class="container bg-grey">
-    <div class="row">
-      <div class="testimonials">
-
-        <div class="testimonial" id="testim0">
-          <img src="img/vienas.png">
-          <p>Nunc accumsan quam metus, id posuere massa condimentum aliquet. Pellentesque scelerisque massa ut quam
-            pretium ultricies eu in lacus. Suspendisse elementum magna a sem placerat, ut facilisis purus tempor. Nunc
-            ac convallis dui.</p>
-          <h3>-MS. Mandy Doe</h3>
-          <h4>Founder of Happines</h4>
-        </div>
-
-        <div class="testimonial" id="testim1">
-          <img src="img/du.png">
-          <p>Nullam consequat urna risus, quis malesuada purus rhoncus in. Nulla hendrerit nunc a venenatis finibus. Sed
-            dignissim, eros non commodo pellentesque, ante magna consectetur leo, nec volutpat elit neque nec lacus.</p>
-          <h3>-MS. Lorem Doe</h3>
-          <h4>Founder of the World</h4>
-        </div>
-
-        <div class="testimonial" id="testim2">
-          <img src="img/trys.jpg">
-          <p>Donec a augue ornare, elementum nisi at, scelerisque est. Etiam ex ipsum, venenatis at consequat in,
-            egestas sit amet elit. Fusce sit amet massa luctus, consequat nibh non, varius ligula. Suspendisse vulputate
-            facilisis mauris, eget pretium urna bibendum in.</p>
-          <h3>-MS. Mandy Impsum</h3>
-          <h4>Founder of the Sun</h4>
-        </div>
-      </div>
-
-      <div class="prev-next">
-        <div onclick="plusDivs(-1)" class="prev">
-          &#x2039
-        </div>
-        <div onclick="plusDivs(+1)" class="next">
-          &#x203a
-        </div>
-      </div>
-
-      <nav class="nav">
-        <div id="dot0"></div>
-        <div id="dot1"></div>
-        <div id="dot2"></div>
-      </nav>
-
-    </div>
-  </div>
-
   <div id="portfolio" class="container">
     <div class="row">
       <h1 class="title"><span>MY</span> PORTFOLIO</h1>
@@ -156,15 +107,13 @@
     <div class="contact-container">
 
       <div class="contact-form-left">
-        <form class="guest-contacts">
+        <form action="mailto:ada.siurniene@gmail.com" method="post" enctype="text/plain" class="guest-contacts">
           <input placeholder="Name" />
           <input placeholder="Email" />
           <input placeholder="Phone" />
           <input placeholder="Website" />
           <textarea placeholder="Your message"></textarea>
-        </form>
-        <form class="hero-button" type="button">
-          Send message
+          <button class="hero-button" type="submit" value="Send message">Send message</button>
         </form>
       </div>
 

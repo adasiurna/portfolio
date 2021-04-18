@@ -1,51 +1,83 @@
 var portfolio_gallery = [
   {
+    id: 'quotes',
     name: 'Random quotes project for FCC',
     tag: 'React',
     picture: 'quotes_img',
-    url: 'portfolio-pages/quotes.html'
+    url: 'portfolio-pages/quotes.html',
+    shortDesc: 'Random Quotes project for FCC',
+    longDesc: 'HTML, CSS, React.js',
+    year: '2021'
   },
   {
+    id: 'timer',
     name: 'Interval Sport Timer build with React',
     tag: 'React',
     picture: 'timer_img',
-    url: 'portfolio-pages/timer.html'
+    url: 'portfolio-pages/timer.html',
+    shortDesc: 'Interval Sport Timer project for FCC',
+    longDesc: 'HTML, CSS, React.js',
+    year: '2021'
   },
   {
+    id: 'bubblePortfolio',
     name: 'Bubble Portfolio',
     tag: 'JavaScript',
     picture: 'portfolio_img',
-    url: 'portfolio-pages/bubble_portfolio.html'
+    url: 'portfolio-pages/bubble_portfolio.html',
+    shortDesc: 'Porfolio Project',
+    longDesc: 'HTML, CSS, JavaScript, jQuery',
+    year: '2019'
   },
   {
+    id: 'maps',
     name: 'Station locator',
     tag: 'JavaScript',
     picture: 'maps_img',
-    url: 'portfolio-pages/maps.html'
+    url: 'portfolio-pages/maps.html',
+    shortDesc: 'Station Locator build with Vanilla JavaScript',
+    longDesc: 'HTML, CSS, JavaScript, Google Could Platform API',
+    year: '2020'
   },
   {
+    id: 'matrox',
     name: 'Matrox landing page',
     tag: 'HTML',
     picture: 'matrox_img',
-    url: 'portfolio-pages/matrox.html'
+    url: 'portfolio-pages/matrox.html',
+    shortDesc: 'Matrox Landing Page',
+    longDesc: 'HTML, CSS',
+    year: '2018'
   },
   {
+    id: 'survey',
     name: 'Simple survey layout',
     tag: 'HTML',
     picture: 'survey_img',
-    url: 'portfolio-pages/survey.html'
+    url: 'portfolio-pages/survey.html',
+    shortDesc: 'Simple Survey Layout',
+    longDesc: 'HTML, CSS',
+    year: '2019'
   },
   {
+    id: 'documentation',
     name: 'Documentation layout',
     tag: 'HTML',
     picture: 'documentation_img',
-    url: 'portfolio-pages/documentation.html'
+    url: 'portfolio-pages/documentation.html',
+    shortDesc: 'Documentation Layout',
+    longDesc: 'HTML, CSS',
+    year: '2019'
   },
   {
+    id: 'error404',
     name: '404 error page',
     tag: 'HTML',
     picture: 'katinas',
-    url: '404 page/index.html'
+    url: '404 page/index.html',
+    shortDesc: '',
+    longDesc: '',
+    year: '2019'
   }
 
 ]
