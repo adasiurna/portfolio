@@ -60,6 +60,16 @@ var portfolio_gallery = [
     year: '2019'
   },
   {
+    id: 'hangman',
+    name: 'Hangman game in Lithuanian',
+    tag: 'JavaScript',
+    picture: 'hangman',
+    url: 'portfolio-pages/hangman.html',
+    shortDesc: 'Hangman game in Lithuanian. Try it out! :)',
+    longDesc: 'JavaScript, jQuery, HTML, CSS',
+    year: '2020'
+  },
+  {
     id: 'documentation',
     name: 'Documentation layout',
     tag: 'HTML',
