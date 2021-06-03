@@ -1,5 +1,15 @@
 var portfolio_gallery = [
   {
+    id: 'photowall',
+    name: 'PhotoWall',
+    tag: 'React',
+    picture: 'photowall',
+    url: 'portfolio-pages/photowall.html',
+    shortDesc: 'React-Redux Photowall Project',
+    longDesc: 'HTML, CSS, React.js, Redux',
+    year: '2021'
+  },
+  {
     id: 'quotes',
     name: 'Random quotes project for FCC',
     tag: 'React',
@@ -28,16 +38,6 @@ var portfolio_gallery = [
     shortDesc: 'Porfolio Project',
     longDesc: 'HTML, CSS, JavaScript, jQuery',
     year: '2019'
-  },
-  {
-    id: 'photowall',
-    name: 'PhotoWall',
-    tag: 'React',
-    picture: 'photowall',
-    url: 'portfolio-pages/photowall.html',
-    shortDesc: 'React-Redux Photowall Project',
-    longDesc: 'HTML, CSS, React.js, Redux',
-    year: '2021'
   },
   {
     id: 'maps',
