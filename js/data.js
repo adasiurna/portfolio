@@ -30,6 +30,16 @@ var portfolio_gallery = [
     year: '2019'
   },
   {
+    id: 'photowall',
+    name: 'PhotoWall',
+    tag: 'React',
+    picture: 'photowall',
+    url: 'portfolio-pages/photowall.html',
+    shortDesc: 'React-Redux Photowall Project',
+    longDesc: 'HTML, CSS, React.js, Redux',
+    year: '2021'
+  },
+  {
     id: 'maps',
     name: 'Station locator',
     tag: 'JavaScript',
